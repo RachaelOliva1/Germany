@@ -1,0 +1,98 @@
+
+.intro {
+  border: 20px solid transparent;
+  border-image-source: url(https://davidsbeenhere.com/wp-content/uploads/2019/07/The_5_Best_Cities_To_Visit_In_Germany_Europe_Davidsbeenhere3.png);
+  border-image-slice: 30;
+  border-image-repeat: stretch;
+  color: #5e3110;
+  text-align: center;
+  padding: 30px;
+  max-width: 800px;
+  width: 90%;
+   margin: 40px auto; 
+}
+
+
+
+.collage-page-wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr 250px; 
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+}
+
+.header-box {
+  grid-column: 2;
+  grid-row: 1 / span 3; 
+  border: 30px solid transparent;
+   border-image-source: url(https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i5a5d21c5bba61e8d/version/1606328435/best-places-to-visit-in-germany.jpg);
+  border-image-slice: 50;
+  border-image-repeat: stretch;
+  color: #000000;
+  padding: 40px;
+  text-align: center;
+  z-index: 10; 
+}
+
+
+.collage-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+
+
+
+.img-top-left {
+  grid-column: 1;
+  grid-row: 1;
+  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 80%);
+}
+
+
+.img-top-right {
+  grid-column: 3;
+  grid-row: 1;
+  clip-path: polygon(15% 0%, 100% 0%, 100% 80%, 0% 100%);
+  transform: rotate(2deg);
+}
+
+
+.img-mid-left {
+  grid-column: 1;
+  grid-row: 2;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; 
+}
+
+
+.img-mid-right {
+  grid-column: 3;
+  grid-row: 2;
+  clip-path: polygon(10% 20%, 100% 0%, 90% 80%, 0% 100%);
+}
+
+
+.img-bottom-left {
+  grid-column: 1;
+  grid-row: 3;
+  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  transform: rotate(-3deg);
+}
+
+
+.img-bottom-right {
+  grid-column: 3;
+  grid-row: 3;
+  clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 20% 100%);
+}
+
+
+.collage-img:hover {
+  transform: scale(1.05) rotate(0deg);
+  z-index: 20;
+}
