@@ -371,7 +371,7 @@ li {
   padding: 0 20px;
 }
 .festival-image {
-  width: 400px;            
+  width: 500px;            
   aspect-ratio: 1 / 1;    
   object-fit: cover;       
   flex-shrink: 0;        
