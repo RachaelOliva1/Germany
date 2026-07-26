@@ -291,7 +291,7 @@ body {
 
 
 .food-item {
-  border: 4px solid #000000;
+  border: 10px solid #000000;
   background-color: #000000;
   overflow: hidden;
   height: 200px;
@@ -397,7 +397,7 @@ li {
 
 .text-box {
   flex: 1;          
-  border: 4px solid #000000;
+  border: 10px solid #000000;
  
   padding: 30px;
   color: #000000;
@@ -478,7 +478,7 @@ font-size:20px;
 
 .text-box {
   flex: 1;          
-  border: 4px solid #000000;
+  border: 10px solid #000000;
  
   padding: 30px;
   color: #000000;
@@ -504,3 +504,59 @@ font-size:20px;
 
 
 
+
+
+
+
+
+
+
+
+
+.split-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; 
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-stack {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;             
+  width: 55%;            
+}
+
+.horizontal-img {
+  border: 4px solid #000000;
+  background-color: #000000;
+  height: 180px;         
+  overflow: hidden;
+}
+
+.horizontal-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+}
+
+.tall-text-box {
+  flex: 1;                
+  border: 10px solid #000000;
+  padding: 30px;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+
+
+@media (max-width: 900px) {
+  .split-layout {
+    flex-direction: column;
+  }
+  .image-stack {
+    width: 100%;
+  }
+}
