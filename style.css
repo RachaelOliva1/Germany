@@ -513,6 +513,8 @@ font-size:20px;
 
 
 
+
+
 .split-layout {
   display: flex;
   flex-direction: row;
@@ -565,6 +567,7 @@ font-size:20px;
     width: 100%;
   }
 }
+
 
 
 
