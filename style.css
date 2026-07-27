@@ -45,6 +45,7 @@
   transition: transform 0.4s ease;
   display: block;
   transform: scale(1.15);
+  border: 10px solid black;
 }
 
 
